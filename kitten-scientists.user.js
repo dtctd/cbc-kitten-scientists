@@ -550,7 +550,7 @@ var run = function() {
     TabManager.prototype = {
         tab: undefined,
         render: function () {
-            if (this.tab && game.activeTabId !== this.tab.tabId) this.tab.render();
+            if (this.tab && game.ui.activeTabId !== this.tab.tabId) this.tab.render();
 
             return this;
         },
